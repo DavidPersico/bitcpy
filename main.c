@@ -43,3 +43,28 @@ int main()
     
     return 0;
 }
+
+/* Results:
+    Copied array is 0 0 0 0 0
+    Copied array is 1 0 0 0 0
+    Copied array is 3 0 0 0 0
+    Copied array is 11 0 0 0 0
+    Copied array is 11 0 0 0 0
+    Copied array is 11 1 0 0 0
+    Copied array is 11 3 0 0 0
+    Copied array is 11 3 0 0 0
+    Copied array is 11 11 0 0 0
+    Copied array is 11 27 0 0 0
+    Copied array is 11 27 1 0 0
+    Copied array is 11 27 3 0 0 
+    Copied array is 11 27 3 0 0
+    Copied array is 11 27 35 0 0
+    Copied array is 11 27 35 0 0
+    Copied array is 11 27 35 2 0
+    Copied array is 11 27 35 10 0
+    Copied array is 11 27 35 42 0
+    Copied array is 11 27 35 42 1
+    Copied array is 11 27 35 42 5
+    Copied array is 11 27 35 42 21
+    Copied array is 11 27 35 42 53
+ */
