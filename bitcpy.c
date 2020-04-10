@@ -41,7 +41,8 @@ void* bitcpy(void* dest, const void* source, size_t num_bits)
 	}
 
 	/* Create mask of size rem_bits and use it to copy appropriate source bits to destination. */
-	char_dest[byte_index] = char_dest[byte_index] | ((1 << (rem_bits)) - 1) & char_source[byte_index];
+	unsigned char ones = 0xff >> (8 - rem_bits);
+	char_dest[byte_index] = (ones | char_dest[byte_index]) ^ ((~char_source[byte_index]) & ones);
 
 	return dest;
 }
